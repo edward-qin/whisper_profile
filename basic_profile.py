@@ -2,7 +2,7 @@ import torch
 import whisper
 
 # Initialize PyTorch Profiler
-model = whisper.load_model("base")
+model = whisper.load_model("large")
 audio = whisper.load_audio("long_speech.mp3")
 
 with torch.profiler.profile(
